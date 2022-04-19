@@ -1,33 +1,31 @@
 {
-  "name": "blockbuyer",
-  "private": true,
-  "version": "0.0.0",
-  "scripts": {
-    "start": "node index.js",
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@headlessui/react": "^1.5.0",
-    "@heroicons/react": "^1.0.6",
-    "ethers": "^5.6.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-icons": "^4.3.1",
-    "react-router-dom": "^5.3.0",
-    "express": "^4.15.2"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react": "^1.0.7",
-    "autoprefixer": "^10.4.4",
-    "postcss": "^8.4.12",
-    "tailwindcss": "^3.0.23",
-    "vite": "^2.8.0"
-  },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ]
-}
+    "name": "blockchaincommerce",
+    "version": "3.0.0",
+    "description": "Blockchain client react app with node server",
+    "engines": {
+      "node": "10.x"
+    },
+    "scripts": {
+      "start": "node server",
+      "build": "cd client/ && npm install && npm run build"
+    },
+    "cacheDirectories": [
+      "node_modules",
+      "client/node_modules"
+    ],
+    "dependencies": {
+      "express": "^4.16.4"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/prasangachami/blockchain_commerce.git"
+    },
+    "keywords": [
+      "node",
+      "heroku",
+      "create-react-app",
+      "react"
+    ],
+    "license": "MIT",
+    "devDependencies": {}
+  }
